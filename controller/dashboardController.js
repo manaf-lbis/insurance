@@ -13,8 +13,6 @@ const login = (req, res) => {
 const dashboard = async (req, res) => {
     try {
         const data = await UserData.find();
-        console.log(data);
-        
 
         res.render('dashboard',{data})
 
@@ -25,26 +23,23 @@ const dashboard = async (req, res) => {
 }
 
 const addNewInsurance = async (req,res)=>{
-    try {
-        console.log('sdfsdfas');
-        
-        const {name,phone,insuranceType} = req.body
-
+    try { 
+        const {name,phone,insuranceType,vehicleRegNo} = req.body
 
         const userDate = new UserData({
             name,
             phone,
-            insuranceType
+            insuranceType,
+            vehicleRegNo
         });
 
         await userDate.save()
         
-        res.status(200).json({message:'success'})
+        res.redirect('/dashboard')
         
  
     } catch (error) {
         console.log(error);
-        
         
     }
 
