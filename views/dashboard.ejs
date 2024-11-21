@@ -74,10 +74,11 @@
                             </tr>
                         </thead>
                         <tbody id="tableBody">
-                            <!-- 15 Dummy Rows for Testing -->
+
+                            <% data.forEach((ele,index) => { %>
                             <tr>
-                                <td>1</td>
-                                <td>John Doe</td>
+                                <td><%=index+1%></td>
+                                <td><%=ele.name %></td>
                                 <td>Kl-230-hsd</td>
                                 <td>1234567890</td>
                                 <td>01/01/2023</td>
@@ -88,6 +89,7 @@
                                     <button class="btn btn-danger btn-sm rounded-2"><i class="bi bi-trash"></i> Delete</button>
                                 </td>
                             </tr>
+                            <% }); %>
                            
                         </tbody>
                     </table>

@@ -12,7 +12,11 @@ const login = (req, res) => {
 
 const dashboard = async (req, res) => {
     try {
-        res.render('dashboard')
+        const data = await UserData.find();
+        console.log(data);
+        
+
+        res.render('dashboard',{data})
 
     } catch (error) {
         console.log(error);
