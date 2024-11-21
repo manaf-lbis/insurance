@@ -7,6 +7,9 @@ const mongoDb = require('./config/mongodb')
 
 //connect to db
 mongoDb()
+console.log('started');
+
+
 
 app.use(express.json())
 app.use(express.static(path.join(__dirname, 'public')))

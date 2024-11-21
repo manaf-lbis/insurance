@@ -1,0 +1,202 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Card Section with Enhanced Colors */
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    color: #fff;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Updated Card Colors */
+.card-header.near-expiry {
+    background-color: #f39c12;
+    /* Yellowish-orange */
+}
+
+.card-header.expired {
+    background-color: #e74c3c;
+    /* Red */
+}
+
+.card-header.total-insurance {
+    background-color: #2ecc71;
+    /* Green */
+}
+
+.card-body {
+    padding: 25px;
+    text-align: center;
+    background-color: #ecf0f1;
+}
+
+.card-body .card-text {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Button Styling */
+.btn {
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding: 12px 25px;
+    width: 48%;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+.btn-success {
+    background-color: #2ecc71;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+    color: white;
+}
+
+/* Table Section */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 18px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.table tbody tr:hover {
+    background-color: #f1f4f7;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    background-color: #3498db;
+    color: white;
+    border-radius: 12px 12px 0 0;
+}
+
+.modal-body {
+    padding: 25px;
+}
+.table th {
+    background-color: #3498db;
+    color: white;
+    border-radius: 12px 12px 0 0;
+}
+  /* Smaller and more compact Buttons */
+  .btn-sm {
+    font-size: 0.875rem;
+    padding: 6px 12px;
+    width: auto; /* Make button width auto */
+}
+ /* Custom Styling for Headings */
+ h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.card-header h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #34495e;
+}
+  /* Sticky Table Header */
+  .table-responsive {
+    max-height: 75vh;
+    overflow-y: auto;
+}
+
+
+.table th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .card-body {
+        padding: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .table th,
+    .table td {
+        font-size: 0.9rem;
+    }
+}
+
+
+

@@ -6,6 +6,11 @@ const userDataSchema = new mongoose.Schema({
         required:true,
         trim:true,
     },
+    vehicleRegNo:{
+        type:String,
+        required:true,
+        trim:true,
+    },
     phone:{
         type:String,
         required:true,
