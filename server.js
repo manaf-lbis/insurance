@@ -8,6 +8,7 @@ const mongoDb = require('./config/mongodb')
 //connect to db
 mongoDb()
 console.log('started');
+console.log('Mongo URI:', process.env.MONGO_URI);
 
 
 
