@@ -33,7 +33,7 @@ const addNewInsurance = async (req,res)=>{
             insuranceType
         });
 
-        console.log(await userDate.save());
+        await userDate.save()
         
         res.status(200).json({message:'success'})
         
@@ -50,7 +50,6 @@ const addNewInsurance = async (req,res)=>{
 const getDashboard = async (req,res) =>{
     try {
         const data = await UserData.find();
-        console.log(data);
         
         res.status(200).json({data});
 
